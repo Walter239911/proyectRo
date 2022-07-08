@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./stylero.css">
+    <title>originalProject</title>
+</head>
+<body>
+
+  <div class=".container-fluid " id="container-principal">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark text-white color">
+      <a href="" class="navbar-brand">
+        <img src="../img/logo.jfif" alt="we share" loading="lazy" class="ms-5 img-tamaño-logo rounded">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   <!-- nav content-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <!-- HOME -->
+          <li class="nav-item">
+            <a href="#" onclick="Inicio()" class="nav-link active">
+              HOME
+            </a>
+          </li>
+           <!-- CURSOS -->
+           <li class="nav-item">
+            <a href="#" onclick="cursos()" class="nav-link">
+              CURSOS
+            </a>
+          </li>
+           <!-- CATALOGO -->
+           <li class="nav-item">
+            <a href="#" onclick="catalogo()" class="nav-link">
+              CATALOGO
+            </a>
+          </li>
+          <!-- CONTACTO -->
+          <li class="nav-item">
+            <a href="#" onclick="contacto()" class="nav-link">
+              CONTACTO
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+<!--position-->
+<div class="position-fixed bottom-0 end-0 z-index: 2"><a href="#container-principal" ><img src="./img-proyectoRo/arrow-alt-circle-up-solid.svg" width="50px" height="50px" alt=""></a></div>
+   <!--img principal-->
+    <div class=".container-fluid  " id="HOME"  >
+      <img src="../img/principal img.jpg" class="figure-img tamaño-de-la-img-principal rounded" alt="">
+    </div>
+    <!--important-->
+    <div class="container-fluid " id="contenedor-principal">
+      <!--contenedor-inicio-->
+    <div class="container shadow rounded bg-body mx-auto border border-danger">
+      <h3 class="text-center text-danger">¡importante!</h3>
+      <p class="text-center">Todos los cursos y talleres se dictan de forma online e incluyen material teórico en pdf. 
+        Los talleres se abona una seña del 50% para confirmar el cupo, sin excepciones.
+        En caso de no poder asistir ese día se reprogramara. Las formaciones se abonan mensualmente.
+        </p>
+    </div>
+    <!--biografia-->
+    <div class="container-md justify-content-evenly shadow rounded bg-body mt-2">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <img src="../img/RO.jpg" class="my-1 img-fluid rounded" alt="">
+        </div>
+        <div class="col-12 col-md-7 mt-5 ">
+          <h3 class="text-center">BIO</h3>
+          <div class="d-flex align-items-center position-bio p-2 ">
+            
+            <p class="text-center ">Roxana inicia el camino espiritual interesándose desde jovén, 
+              desde el año 88’ en temáticas esotéricas, metafísica, control mental, filosofías budistas,
+               libros de desarrollo personal y seminarios.  En 2010 comienza a estudiar “formalmente” se
+                 sumerge en formaciones de meditación, registros akashicos, chamanismo, constelaciones familiares, 
+                 terapia de vidas pasadas sanación energética, tarot rider y egipcio, tinturas madre, 
+                 terapia floral y más, abarcando los intereses que resonaban en su transitar. Desde entonces
+                  se dedica a transmitir constantemente sus experiencias, la sanación del ser,
+                   acompañando a otros a desarrollarse y recordar su conexión con lo divino. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class=" container-md-8  justify-content-evenly mb-4 " id="Cursos">
+    <h1 class="text-center m-3">/CURSOS</h1>
+      <div class="row">
+        <div class="row justify-content-evenly">
+          <div class="col-10 col-md-5 p-1 mx-1 ">
+            <div class="row shadow  bg-body rounded ">
+              <div class="col-12 col-md-4">
+                <img src="./img-proyectoRo/munay-ki.jpg" class=" mt-1 my-1 rounded d-block w-100" height="200px" alt="">
+              </div>
+            <div class="col-12 col-md-8  shadow  bg-body rounded ">
+              <h5 class="text-center mb-2">MUNAY KI 
+                </h5>
+              <p class="text-center">CENTRO HOLÍSTICO 
+                Munay Ki en idioma quechua significa “ser tú mismo” o “ser amor” fue elegido
+                por ser un sistema desarrollado por los Incas de autoconocimiento y
+                transformación.</p>
+              
+              <div class="row d-flex  align-items-end">
+                <div class="col-7">
+                  
+                </div>
+                <div class="col-5 justify-content-end align-items-end">
+                 <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  info
+  </button>
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">cursos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        para saber mas, contactenos via whatsapp
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+             </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-10 col-md-5 mx-1 p-1 ">
+            <div class="row shadow  bg-body rounded ">
+              <div class="col-12 col-md-4">
+                <img src=".//img-proyectoRo/Maestria-akashicos.jpg" class=" mt-1 my-1 rounded d-block w-100" height="200px" alt="">
+              </div>
+            <div class="col-12 col-md-8  shadow  bg-body rounded ">
+              <h5 class="text-center">REGISTROS AKASHICOS</h5>
+              <p class="text-center ">Los registros akashicos son un espacio multidimensional donde se hallan todas
+                las experiencias del alma, una biblioteca cósmica llena de información y un
+                espacio de sanación
+                </p> 
+              <div class="row d-flex  align-items-end">
+                <div class="col-7">
+                 
+                </div>
+                <div class="col-5">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    info
+                    </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">cursos</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          para saber mas, contactenos via whatsapp
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 p-1 mx-1 ">
+          <div class="row shadow  bg-body rounded ">
+            <div class="col-12 col-md-4">
+              <img src="./img-proyectoRo/sibolos ar.jpg" class=" mt-1 my-1 rounded d-block w-100" height="200px" alt="">
+            </div>
+          <div class="col-12 col-md-8  shadow  bg-body rounded ">
+            <h5 class="text-center  ">SÍMBOLOS ARCANGELICOS</h5>
+            <p class="text-center  ">
+                Sistema de sanación fuerte, para armonizar personas y lugares. Símbolos
+                sagrados de Miguel y Rafael, usos, mantras, limpieza.
+
+              </p>
+            
+            <div class="row justify-content-evenly mt-2">
+              <div class="col-12 col-md-7">
+              
+              </div>
+              <div class="col-5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  info
+                  </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">cursos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        para saber mas, contactenos via whatsapp
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-10 col-md-5  p-1 ">
+          <div class="row shadow  bg-body rounded ">
+            <div class="col-12 col-md-4">
+              <img src="./img-proyectoRo/tarot-2.jpg" class=" mt-1 my-1 rounded d-block w-100" height="200px" alt="">
+            </div>
+          <div class="col-12 col-md-8 shadow  bg-body rounded ">
+            <h5 class="text-center">TAROT </h5>
+            <p>Estudiaremos los Arcanos Mayores, Arcanos menores (78 cartas en total) e
+              iremos descubriendo sus misterios y significados</p>
+            <div class="row justify-content-evenly">
+              <div class="col-12 col-md-7">
+                
+              </div>
+              <div class="col-5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  info
+                  </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">cursos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        para saber mas, contactenos via whatsapp
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <!---->
+  </div>
+   </div>
+   <!--termina el container-->
+  </div>
+   <footer class=".container-fluid ">
+    <div class="row p-2  shadow  color rounded text-light">
+      <div class="col-2 my-auto"  >
+        
+        <img src="../img/logo.jfif" alt="we share" loading="lazy" class="ms-5 img-tamaño-logo rounded">
+      </div>
+     
+      <div class="col-12 col-md-3 p-2">
+        <h5 class="text-center">CONTACTO</h5>
+        <ul>
+          <h5>Gmail</h5>
+          <li >
+            <b>aalquimiapura@gmail.com </b>
+            
+          </li>
+          <h5>Whatsapp</h5>
+          <li>
+           <b>1157530374 o 1138302746 vía whatsapp.</b>
+
+          </li>
+        </ul>
+      </div>
+     
+      <div class="col-12 col-md-2 p-2">
+        <ul>
+          <li>Sanacion Cristica</li>
+          <li>Registros Akashicos</li>
+          <li>Aqualead</li>
+          <li>Tarot</li>
+          <li>Sahumo</li>
+          <li>Brumas</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-2">
+        <ul>
+          <li>Teamana Healing</li>
+          <li>Sanacion de Utero</li>
+          <li>Pendulo Hebreo</li>
+          <li>Munay Ki</li>
+          <li>Introduccion en Meditaccion</li>
+          <li>Mesa Cuantica</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-2">
+        <ul>
+          <li>AMADEUS Amadeus</li>
+          <li>SANACIÓN BENEDICTINA Sanacion Benedectiana</li>
+          <li>Formacion en Terapia de Vidas Pasadas</li>
+          <li>Simbolos Arcangelicos </li>
+        </ul>
+      </div>
+    </div>
+   </footer>
+  
+   <script src="./proyectoRo.js"></script>
+   <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+</body>
+</html>
