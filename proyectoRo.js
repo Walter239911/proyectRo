@@ -711,7 +711,7 @@ function contacto(){
     $contenedor.innerHTML = `
     
     <div class="container position-form">
-    <form action="https://formsubmit.co/garciawald@gmail.com" method="POST" target="_blank">
+    <form action="https://formsubmit.co/aalquimiapura@gmail.com" method="POST" target="_blank">
     <div class="container row mx-auto">
       <div class="mb-3 col-6 ">
         <label for="exampleFormControlInput1" class="form-label" >Nombre</label>
