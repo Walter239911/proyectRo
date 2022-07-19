@@ -1,6 +1,27 @@
 const $contenedor = document.getElementById("contenedor-principal")
 
 
+  const $active = document.querySelectorAll(".nav-link");
+
+  $active.forEach((el, i)=>{
+    $active[i].addEventListener("click", e =>{
+      $active.forEach((el, i)=>{
+        $active[i].classList.remove("active1");
+      })
+      $active[i].classList.add("active1");
+      console.log(i)
+    })
+  })
+
+
+
+
+
+
+function contact(){
+
+}
+
 function cursos(){
     $contenedor.innerHTML = ``;
     
@@ -8,23 +29,24 @@ function cursos(){
     container.classList.add("container")
     //+++++++++++++++++++++++
     let button = [
-    {titulo: "SANACIÓN CRÍSTICA TALLER", href: "#SANACIÓN CRÍSTICA TALLER"},
+    {titulo: "Sanacion cristica taller", href: "#SANACIÓN CRÍSTICA TALLER"},
     {titulo: "Munay-ki", href: "#Munay-ki"},
-    {titulo: "REGISTROS AKASHICOS", href: "#REGISTROS AKASHICOS"},
+    {titulo: "Registros akashicos", href: "#REGISTROS AKASHICOS"},
     {titulo: "Segundo Nivel Registros Akashicos", href: "#Segundo Nivel Registros Akashicos"},
-    {titulo: "MAESTRÍA EN LECTURAS AKASHICAS", href: "#MAESTRÍA EN LECTURAS AKASHICAS"},
-    {titulo: "TAROT", href: "#TAROT"},
-    {titulo: "TAMEANA HEALING", href: "#TAMEANA HEALING"},
-    {titulo: "SANACIÓN DEL ÚTERO", href: "#SANACIÓN-DEL-ÚTERO"},
-    {titulo: "PÉNDULO HEBREO", href: "#PÉNDULO HEBREO"},
-    {titulo: "AMADEUS", href: "#AMADEUS"},
-    {titulo: "SANACIÓN BENEDICTINA", href: "#SANACIÓN BENEDICTINA"},
-    {titulo: "FORMACIÓN EN TERAPIA DE VIDAS PASADAS", href: "#FORMACIÓN EN TERAPIA DE VIDAS PASADAS"},
-    {titulo: "SÍMBOLOS ARCANGELICOS", href: "#ÍMBOLOS ARCANGELICOS"},
-    {titulo: "TALLER DE SAHUMO", href: "#TALLER DE SAHUMO"},
-    {titulo: "TALLER DE BRUMAS", href: "#TALLER DE BRUMAS"},
-    {titulo: "INSTRUCTOR EN MEDITACIÓN", href: "#INSTRUCTOR EN MEDITACIÓN"},
-    {titulo: "TALLER DE MESA CUÁNTICA", href: "#TALLER DE MESA CUÁNTICA"},
+    {titulo: "Maestria en lecturas akashicas", href: "#MAESTRÍA EN LECTURAS AKASHICAS"},
+    {titulo:"Aqualed", href: "#AQUALEAD"},
+    {titulo: "Tarot", href: "#TAROT"},
+    {titulo: "Tameana healing", href: "#TAMEANA HEALING"},
+    {titulo: "Sanacion del utero", href: "#SANACIÓN-DEL-ÚTERO"},
+    {titulo: "Pendulo hebreo", href: "#PÉNDULO HEBREO"},
+    {titulo: "Amadeus", href: "#AMADEUS"},
+    {titulo: "Sanacion benedictiana", href: "#SANACIÓN BENEDICTINA"},
+    {titulo: "Formacion en terapias de vidas pasadas", href: "#FORMACIÓN EN TERAPIA DE VIDAS PASADAS"},
+    {titulo: "Simbolos arcangelicos", href: "#ÍMBOLOS ARCANGELICOS"},
+    {titulo: "Taller de sahumo", href: "#TALLER DE SAHUMO"},
+    {titulo: "Taller de brumas", href: "#TALLER DE BRUMAS"},
+    {titulo: "Instructor en meditacion", href: "#INSTRUCTOR EN MEDITACIÓN"},
+    {titulo: "Tallaer en mesa cuantica", href: "#TALLER DE MESA CUÁNTICA"},
 ];
 
 const $divDropdown = document.createElement("div")
@@ -87,35 +109,58 @@ let titulo = document.createTextNode(element.titulo)
      //munay-ki
     {titulo: "MUNAY KI", 
     img: "./img-proyectoRo/munay-ki.jpg",
-     description: "Basado en las prácticas iniciáticas de los chamanes de los Andes y el Amazonas, los Munay-Ki son nueve ritos de iniciación para convertirse en una persona de sabiduría y , Son transmisiones energéticas que curan las heridas del pasado: la herencia genética y kármica con la que nacemos. Transforman y mejoran el campo de energía luminosa y vuelven a informar nuestro ADN.", 
-     subTitulo : "beneficios", 
-     objetivo: "Comenzarás a sentir la plentid interior, la sensación de haber trascendido miles de vidas para por fin poder disfrutar el presente. Los ritos se encargarán de encender tu propia luz interior para que puedas ver con luz propia a través de unos renovados ojos.", 
-     subTitulo2: "niveles", 
-     introduccion: `Ritos de Munay ki (level-1)
-Ritos de Munay ki (level-2)
-Ritos de Munay ki (level-3)`,
-     duracion: "Se entregan los 9 ritos en 3 encuentros intensivos.", 
+     description: `Basado en las prácticas iniciáticas de los chamanes de los Andes y el Amazonas,
+     los Munay-Ki son nueve ritos de iniciación para convertirse en una persona de
+     sabiduría y poder. Son transmisiones energéticas que curan las heridas del
+     pasado: la herencia genética y kármica con la que nacemos. Transforman y
+     mejoran el campo de energía luminosa y vuelven a informar nuestro ADN. Se
+     entregan los 9 ritos en 3 encuentros intensivos.
+     `, 
+     subTitulo : "", 
+     objetivo: "", 
+     subTitulo2: "", 
+     introduccion: ``,
+     duracion: "", 
      id:"Munay-ki",
      BTN: "Los precios se consultan via whatsapp."},
     //first level
     {titulo: "REGISTROS AKASHICOS", 
     img: "./img-proyectoRo/ragistorsss.jpg", 
-    description: "Los registros akashicos son un espacio multidimensional donde se hallan todas las experiencias del alma, una biblioteca cósmica llena de información y un espacio de sanación", 
-    subTitulo : "primer nivel", 
-    objetivo: "en el primer nivel aprenderás a abrir tus propios registros akáshicos habilitando la conexión tus guías y sus mensajes. Duración 4 hs, luego de esa formación puedes participar de una practica.", 
-    subTitulo2: "introduccion", 
-    introduccion: "Significado de registros akáshicos. Planos y campos vibratorios. Flor de la vida. Utilización de los chakras. Diferencia entre registros y regresiones a vidas pasadas. Maestros ascendidos. Ejercicios de limpieza y purificación. Protocolo para abrir los registros akáshicos. Guia para la consulta. Guia de preguntas para la práctica Descubrir información en los órganos, seres vivos y lugares físicos. Diario de registros. Oraciones.",
+    description: `Los registros akashicos son un espacio multidimensional donde se hallan todas
+    las experiencias del alma, una biblioteca cósmica llena de información y un
+    espacio de sanación en el primer nivel aprenderás a abrir tus propios registros
+    akáshicos habilitando la conexión tus guías y sus mensajes.
+    Duración 4 hs, luego de esa formación puedes participar de una practica.` ,
+    subTitulo : "contenido", 
+    objetivo: `Significado de registros akáshicos. Planos y campos vibratorios. Flor de la vida.
+    Utilización de los chakras. Diferencia entre registros y regresiones a vidas
+    pasadas.
+    Maestros ascendidos. Ejercicios de limpieza y purificación. Protocolo para abrir
+    los registros akáshicos. Guia para la consulta. Guia de preguntas para la práctica
+    Descubrir información en los órganos, seres vivos y lugares físicos. Diario de
+    registros. Oraciones.
+    `, 
+    subTitulo2: "", 
+    introduccion: "",
     duracion: "",
     id:"REGISTROS AKASHICOS", 
     BTN: "Los precios se consultan via whatsapp."},
    //segundo akashicos
     {titulo: "Segundo Nivel Registros Akashicos", 
     img:"./img-proyectoRo/blog-registros-akashicos.png", 
-    description: "En este nivel aprenderemos a abrir registros de otros y cómo llevar a cabo una sesión de lectura a terceros. Considero que es necesario entre un nivel y otro tener práctica antes de iniciar a terceros. Se realizarán encuentros para practicar lecturas. Encuentro de 4 hs.", 
+    description: `En este nivel aprenderemos a abrir registros de otros y cómo llevar a cabo una
+    sesión de lectura a terceros. Considero que es necesario entre un nivel y otro
+    tener práctica antes de iniciar a terceros. Se realizarán encuentros para
+    practicar lecturas.
+    Encuentro de 4 hs.` , 
     subTitulo : "", 
     objetivo: "", 
     subTitulo2: "contenido", 
-    introduccion: "Introducción al 2a nivel. Preguntas y respuestas. 7 cuerpos. Jerarquías divinas. Karma dharma. Junta kármica. Liberación con puntos de gracia. Co-creación. Sesión de lectura como es su desarrollo.Guia de lectura. Consultas. Protección. Oraciones. Protocolo para la apertura. Fórmulas. Sanación del clan decretos. Ho'oponopono. Meditaciones.",
+    introduccion: `Introducción al 2a nivel. Preguntas y respuestas. 7 cuerpos. Jerarquías divinas.
+    Karma dharma. Junta kármica. Liberación con puntos de gracia. Co-creación.
+    Sesión de lectura como es su desarrollo.Guia de lectura. Consultas. Protección.
+    Oraciones. Protocolo para la apertura. Fórmulas. Sanación del clan decretos.
+    Ho'oponopono. Meditaciones.`,
     duracion: "",
     id:"Segundo Nivel Registros Akashicos", 
     BTN: "Los precios se consultan via whatsapp."},
@@ -124,18 +169,36 @@ Ritos de Munay ki (level-3)`,
     img:"./img-proyectoRo/Maestria-akashicos.jpg", 
     description: "", 
     subTitulo : "objetivos", 
-    objetivo: "La formación de seres humanos amorosos que se comprometan a cuidar y continuar respetuosamente con el encuentro angélico, y la recepción del conocimiento akáshico para transmitir a otros seres en continua evolución. Este nivel está destinado a personas que han cursado los 2 anteriores niveles de lecturas akashicas y deseen formar a otros seres en este camino.", 
+    objetivo: `La formación de seres humanos amorosos que se comprometan a
+    cuidar y continuar respetuosamente con el encuentro angélico, y la recepción
+    del conocimiento akáshico para transmitir a otros seres en continua evolución.
+    Este nivel está destinado a personas que han cursado los 2 anteriores niveles de
+    lecturas akashicas y deseen formar a otros seres en este camino.`, 
     subTitulo2: "contenido", 
-    introduccion: "Linaje ancestral y sanación del ADN (con memoria celular). Activación de la glándula pineal. Rol del terapeuta. Pautas de atención. 7 leyes espirituales. Jerarquías. Llama violeta. Sanación del útero y memorias femeninas. Remoción de implantes. Votos karmicos. Liberación del clan. Herramientas de protección. Oraciones y novenas.Sanación angélica con símbolos de Miguel Arcangel. Merkaba. Sólidos platónicos. Plus: Material audiovisual y de lectura recomendado.",
-    duracion: "Prácticas akáshicas en cada encuentro. Meditaciones de activación. Duración: 6 meses, clase mensual de 3 hs.", 
+    introduccion: ` Linaje ancestral y sanación del ADN (con memoria celular). Activación
+    de la glándula pineal. Rol del terapeuta. Pautas de atención. 7 leyes espirituales.
+    Jerarquías. Llama violeta. Sanación del útero y memorias femeninas. Remoción
+    de implantes. Votos karmicos. Liberación del clan. Herramientas de protección.
+    Oraciones y novenas.Sanación angélica con símbolos de Miguel Arcangel.
+    Merkaba. Sólidos platónicos. Plus: Material audiovisual y de lectura
+    recomendado.
+    `,
+    duracion: `Prácticas akáshicas en cada encuentro. Meditaciones de activación.
+    Duración: 6 meses, clase mensual de 3 hs.`, 
     id:"MAESTRÍA EN LECTURAS AKASHICAS",
     BTN: "Los precios se consultan via whatsapp."},
     //aqualed
     {titulo: "AQUALEAD",
      img:"./img-proyectoRo/Aqualed.jpg", 
-     description: "Es una energía relacionada con los seres elementales y de la naturaleza (Elfos, hadas, etc..). Trabaja sobre el agua y su propósito es de sanar y limpiar, asi se puede sanar la Tierra y todos los seres vivos. La energía Aqualead trabaja de manera muy poderosa en el cuerpo humano.", 
-     subTitulo : "objetivos", 
-     objetivo: "En este taller aprenderás a usar sus símbolos para tu sanación y la de otros. El intercambio es a voluntad ya que esta técnica no se cobra.", 
+     description: `Es una energía relacionada con los seres elementales y de la naturaleza (Elfos,
+      hadas, etc..). Trabaja sobre el agua y su propósito es de sanar y limpiar, asi se
+      puede sanar la Tierra y todos los seres vivos. La energía Aqualead trabaja de
+      manera muy poderosa en el cuerpo humano.
+      En este taller aprenderás a usar sus símbolos para tu
+      sanación y la de otros. El intercambio es a voluntad ya que esta técnica no se cobra.
+      `, 
+     subTitulo : "", 
+     objetivo: "", 
      subTitulo2: "Niveles", 
      introduccion: `AQUALEAD (level-1)
 AQUALEAD (level-2)
@@ -146,7 +209,12 @@ AQUALEAD (Maestria)`,
    //tarot
     {titulo: "TAROT", 
     img: "./img-proyectoRo/tarot-2.jpg", 
-    description: "Estudiaremos los Arcanos Mayores, Arcanos menores (78 cartas en total) e iremos descubriendo sus misterios y significados, diversos esquemas de lecturas, prácticas todas las clases e interpretación, meditaciones, compartiremos información y vídeos, formas de llevar una consulta, mirada evolutiva versus predictiva, preparación del espacio y de nosotros, acompañamiento mediante el grupo.", 
+    description: `Estudiaremos los Arcanos Mayores, Arcanos menores (78 cartas en total) e
+    iremos descubriendo sus misterios y significados, diversos esquemas de
+    lecturas, prácticas todas las clases e interpretación, meditaciones,
+    compartiremos información y vídeos, formas de llevar una consulta, mirada
+    evolutiva versus predictiva, preparación del espacio y de nosotros, acompañamiento
+    mediante el grupo.`, 
     subTitulo : "", 
     objetivo: "", 
     subTitulo2: "", 
@@ -158,7 +226,10 @@ AQUALEAD (Maestria)`,
     //teamana
     {titulo: "TAMEANA HEALING", 
     img: "./img-proyectoRo/teamana.jpg", 
-    description: "La sanación energética con tameana es realizada con símbolos de luz pleyadianos y cristales de cuarzo, eleva la frecuencia vibratoria limpiando desbloqueos y patrones cristalizados, ayuda a armonizar. Aprenderemos esta técnica, su origen, símbolos y practicaremos con ellos.", 
+    description: `La sanación energética con tameana es realizada con símbolos de luz
+    pleyadianos y cristales de cuarzo, eleva la frecuencia vibratoria limpiando
+    desbloqueos y patrones cristalizados, ayuda a armonizar. Aprenderemos esta
+    técnica, su origen, símbolos y practicaremos con ellos.`, 
     subTitulo : "", 
     objetivo: "", 
     subTitulo2: "", 
@@ -202,7 +273,10 @@ AQUALEAD (Maestria)`,
     //benedictiana
     {titulo: "SANACIÓN BENEDICTINA", 
     img: "./img-proyectoRo/sanacion benedictiana.jpg", 
-    description: "Sagrada herramienta de Protección y Limpieza energética en el hogar, sanación a otras personas y autosanación. Se basa en la imposición de manos, el poder de la oración y la energía santa. Curación indicada para enfermedades y disturbios de todo tipo.", 
+    description: `Sagrada herramienta de Protección y Limpieza energética en el hogar, sanación
+    a otras personas y autosanación. Se basa en la imposición de manos, el poder de
+    la oración y la energía santa. Curación indicada para enfermedades y disturbios
+    de todo tipo. `, 
     subTitulo : "", 
     objetivo: "", 
     subTitulo2: "", 
@@ -213,7 +287,7 @@ AQUALEAD (Maestria)`,
     //vidas pasadas
     {titulo: "FORMACIÓN EN TERAPIA DE VIDAS PASADAS", 
     img: "./img-proyectoRo/vidad pasadas.jpg", 
-    description: `Camino de sanación donde vamos al origen del bloqueo actual, desanudando la memoria del dolor y trauma en la infancia o en vidas pasadas que bloquean el fluir de nuestra vida. "Aprendemos con el método de Dr.Cabouli" .`, 
+    description: `Camino de sanación donde vamos al origen del bloqueo actual, desanudando la memoria del dolor y trauma en la infancia o en vidas pasadas que bloquean el fluir de nuestra vida. "Aprendemos con el método de Dr.Cabouli " . Duración 13 meses`, 
     subTitulo : "", 
     objetivo: "", 
     subTitulo2: "", 
@@ -258,28 +332,35 @@ AQUALEAD (Maestria)`,
     //meditaccion
     {titulo: "INSTRUCTOR EN MEDITACIÓN", 
     img: "./img-proyectoRo/111.JPG", 
-    description: `Se recorren herramientas de meditación para sostener un estado de armonía interior y exterior.`,             
-    subTitulo : "objetivos", 
+    description: `Se recorren herramientas de meditación para sostener un estado de armonía
+    interior y exterior. Introducción. Significado. Diferencias entre visualizar y
+    meditar. Clases. Formas de respiración. 7 chakras. 7 cuerpos. Protecciones.
+    Decreto y mantras. Irradiación uso de energía
+    Duración: 6 meses, 1 encuentro por mes.
+    `,             
+    subTitulo : "", 
     objetivo: "", 
-     subTitulo2: "introduccion", 
-    introduccion: `1- Introducción .2- Significado .3-Diferencias entre visualizar y meditar.4-Formas de respiración5- 7 chakras. 6- 7 cuerpos.7- Protecciones.8 -Decreto y mantras.9-Irradiación uso de energía.10-Clases`, 
-    duracion: "*1 encuentro",
+     subTitulo2: "", 
+    introduccion: ``, 
+    duracion: "",
     id:"INSTRUCTOR EN MEDITACIÓN",
     BTN: "Los precios se consultan via whatsapp."},
     //mesa cuantica            
     {titulo: "TALLER DE MESA CUÁNTICA", 
     img: "./img-proyectoRo/mesa cuantica.jpg", 
     description: `Es un tablero que reúne los símbolos de las energías del hombre, la tierra y el
-                            cosmos. Se crea conexión con la supraconciencia y desde allí se activan
-                            comandos nuevos para nuestra realidad. Utilizando técnicas de  metafísica, limpieza
-                            energética, conocimiento, saltos cuánticos, programación de cristales, enviar
-                            oraciones, usar los 12 rayos sutiles, conciencia colectiva y más. Llegando esta
-                            energía a influir en cada cuerpo (físico, mental, emocional y espiritual) ayudando
-                            a modificar patrones negativos en proyectos, personas y más.`, 
-    subTitulo : "objetivos", 
+    cosmos. Se crea conexión con la supraconciencia y desde allí se activan
+    comandos nuevos para nuestra realidad. Utilizando técnicas de  metafísica, limpieza
+    energética, conocimiento, saltos cuánticos, programación de cristales, enviar
+    oraciones, usar los 12 rayos sutiles, conciencia colectiva y más. Llegando esta
+    energía a influir en cada cuerpo (físico, mental, emocional y espiritual) ayudando
+    a modificar patrones negativos en proyectos, personas y más.
+    1 encuentro intensivo.
+    `, 
+    subTitulo : "", 
     objetivo: "", 
     subTitulo2: "", 
-    introduccion: "* 1 encuentro intensivo.", 
+    introduccion: "", 
     id:"TALLER DE MESA CUÁNTICA",
     BTN: "Los precios se consultan via whatsapp."},
     
@@ -336,6 +417,7 @@ AQUALEAD (Maestria)`,
     $divCardPrincipal.classList.add("mb-3")
     $divRow.classList.add("row")
     $divRow.classList.add("g-0")
+    $divRow.classList.add("border-color")
     imgCard.classList.add("img-fluid")
     imgCard.classList.add("heiImg")
     imgCard.classList.add("rounded-start")
@@ -401,13 +483,16 @@ container.appendChild($divCardPrincipal)
 function Inicio(){
     $contenedor.innerHTML = ``;
 
-    let carga = setTimeout(()=>{
+    
 
       $contenedor.innerHTML = `
-      <div class="container-md justify-content-evenly shadow rounded bg-body mt-2">
+      <div class="container-fluid " id="contenedor-principal">
+    <!--biografia-->
+    <div class="container-md justify-content-evenly shadow rounded bg-body mt-2 border-color">
       <div class="row">
         <div class="col-12 col-md-4">
           <img src="./img/RO.jpg" class="my-1 img-fluid rounded" alt="">
+          
         </div>
         <div class="col-12 col-md-7 mt-5 ">
           <h3 class="text-center">BIO</h3>
@@ -429,8 +514,8 @@ function Inicio(){
     <h1 class="text-center m-3">/CURSOS</h1>
       <div class="row">
         <div class="row justify-content-evenly">
-          <div class="col-10 col-md-5 p-1 mx-1 ">
-            <div class="row shadow  bg-body rounded ">
+          <div class="col-10 col-md-5 p-1 mx-1  ">
+            <div class="row shadow  bg-body rounded border-color">
               <div class="col-12 col-md-4">
                 <img src="./img-proyectoRo/munay-ki.jpg" class=" mt-1 my-1 rounded d-block w-100" height="200px" alt="">
               </div>
@@ -477,7 +562,7 @@ function Inicio(){
           </div>
           
           <div class="col-10 col-md-5 mx-1 p-1 ">
-            <div class="row shadow  bg-body rounded ">
+            <div class="row shadow  bg-body rounded border-color">
               <div class="col-12 col-md-4">
                 <img src="./img-proyectoRo/Maestria-akashicos.jpg" class=" mt-1 my-1 rounded d-block w-100" height="200px" alt="">
               </div>
@@ -524,7 +609,7 @@ function Inicio(){
       
       <div class="row justify-content-evenly">
         <div class="col-10 col-md-5 p-1 mx-1 ">
-          <div class="row shadow  bg-body rounded ">
+          <div class="row shadow  bg-body rounded border-color">
             <div class="col-12 col-md-4">
               <img src="./img-proyectoRo/sibolos ar.jpg" class=" mt-1 my-1 rounded d-block w-100" height="200px" alt="">
             </div>
@@ -570,7 +655,7 @@ function Inicio(){
         </div>
         
         <div class="col-10 col-md-5  p-1 ">
-          <div class="row shadow  bg-body rounded ">
+          <div class="row shadow  bg-body rounded border-color">
             <div class="col-12 col-md-4">
               <img src="./img-proyectoRo/tarot-2.jpg" class=" mt-1 my-1 rounded d-block w-100" height="200px" alt="">
             </div>
@@ -614,10 +699,8 @@ function Inicio(){
     </div>
     <!---->
   </div>
-   </div>
-   <!--termina el container-->
-  </div>`;
-    },500)
+   </div>`;
+  
     
 
     
@@ -627,44 +710,45 @@ function contacto(){
     $contenedor.innerHTML = ``;
     $contenedor.innerHTML = `
     
-    <div class="container shadow  bg-white rounded  my-5 p-5">
-    <h1 class="text-center mb-5">/Contactos</h1>
-    <div class="row shadow  bg-white rounded p-2 border border-success">
-        <div class="ccol-12 col-md-6 ">
-           <h1 class="text-center text-success">Whatsapp</h1>
-        </div>
-        <div class="col-12 col-md-6  my-auto">
-            <h5 class="text-center">11-57530374 o 11-38302746</h5>
-            
-        </div>
-    </div>
-    <div class="row mt-5  shadow  bg-white rounded p-2 border border-danger">
-        <div class="col-12 col-md-6  ">
-            <h1 class="text-center text-danger ">Gmail</h1>
-        </div>
-        <div class="col-12 col-md-6  my-auto">
-            <h5 class="text-center">aalquimiapura@gmail.com</h5>
-        </div>
-    </div>
-</div>`;
+    <div class="container position-form">
+    <form action="https://formsubmit.co/garciawald@gmail.com" method="POST" target="_blank">
+    <div class="container row mx-auto">
+      <div class="mb-3 col-6 ">
+        <label for="exampleFormControlInput1" class="form-label" >Nombre</label>
+        <input type="text" name="name" class="form-control border-color" id="exampleFormControlInput1" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$" placeholder="Nombre" required>
+      </div>
+      <div class="mb-3 col-6">
+        <label for="exampleFormControlInput1" class="form-label">Email </label>
+        <input type="email" name="email" class="form-control border-color" id="exampleFormControlInput1" required placeholder="email">
+      </div>
+      <div class="mb-3 col-6">
+        <label for="exampleFormControlTextarea1" class="form-label">Motivo</label>
+        <textarea class="form-control border-color" name="commets" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class=" my-auto col-6">
+        <input type="submit" name="submit" value="enviar" class="btn border-color " onclick="contact()">
+       </div>
+     </div>
+  </form></div>
+    
+    `;
 }
 
 function catalogo(){
   $contenedor.innerHTML = ``;
   
   let productos = [
-    {producto: "botella", precio: "2.800", descriptions : "la bottle is very bog and confortable" ,img : "./img-proyectoRo/Maestria-akashicos.jpg" , alert1 : "prueba"},
-    {producto: "termo", precio: "6.700", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/munay-ki.jpg"},
-    {producto: "mate", precio: "1.200", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/sibolos ar.jpg"},
-    {producto: "cama", precio: "20.350", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/tarot-2.jpg"},
-    {producto: "puerta", precio: "35.000", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/sibolos ar.jpg"},
-    {producto: "ventana", precio: "15.000", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/Maestria-akashicos.jpg"},
-    {producto: "botella", precio: "2.800", descriptions : "la bottle is very bog and confortable" ,img : "./img-proyectoRo/Maestria-akashicos.jpg"},
-    {producto: "termo", precio: "6.700", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/munay-ki.jpg"},
-    {producto: "mate", precio: "1.200", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/sibolos ar.jpg"},
-    {producto: "cama", precio: "20.350", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/tarot-2.jpg"},
-    {producto: "puerta", precio: "35.000", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/sibolos ar.jpg"},
-    {producto: "ventana", precio: "15.000", descriptions : "la bottle is very bog and confortable",img : "./img-proyectoRo/Maestria-akashicos.jpg"}
+    {producto: "Lampara", precio: "naranja", descriptions : "Lampara en forma de roca" ,img : "./img/img-catalago/lampara.jfif" , alert1 : "prueba"},
+    {producto: "auricos", precio: "amarillo, rojo, marron", descriptions : "auricos de diferentes olores ",img : "./img/img-catalago/floresbach.png"},
+    {producto: "piramide", precio: "rojo", descriptions : "piramide de orgon",img : "./img/img-catalago/piramide-roja.jpeg"},
+    {producto: "piramide", precio: "naranja", descriptions : "piramide de orgon",img : "./img/img-catalago/piramide.jfif"},
+    {producto: "piramide", precio: "violeta", descriptions : "piramide de orgon",img : "./img/img-catalago/piramide-media.jfif"},
+    {producto: "piramide", precio: "naranja", descriptions : "piramide de orgon",img : "./img/img-catalago/second-rock.jfif"},
+    {producto: "Buda", precio: "trasnparente", descriptions : "Buda de cristal" ,img : "./img/img-catalago/cristal-buda.jpg"},
+    {producto: "lampara", precio: "violeta", descriptions : "lampara de orgon",img : "./img/img-catalago/lampara-violeta.jfif"},
+    {producto: "lamparas", precio: "varios", descriptions : "lamparas",img : "./img/img-catalago/lamparas.jpg"},
+    {producto: "llavero", precio: "azul", descriptions : "contiene orgon",img : "./img/img-catalago/llaveros.jpeg"}
+    
 ] 
 const div = document.createElement("div")
 productos.forEach((element)=>{
@@ -673,8 +757,8 @@ const $div = document.createElement("div"),
  $img = document.createElement("img"),
  $div2 = document.createElement("div"),
  $h5 = document.createElement("h5"),
- $p = document.createElement("p")
- //$a = document.createElement("a")
+ $p = document.createElement("p"),
+ $p2 = document.createElement("p")
 
 div.classList.add("d-flex")
 div.classList.add("row")
@@ -683,25 +767,26 @@ $div.classList.add("card")
 $div.classList.add("medida")
 $div.classList.add("my-3")
 $img.setAttribute("src", element.img)
+$img.classList.add("tamaño-img")
 $div2.classList.add("card-body")
 $h5.classList.add("card-title")
 $p.classList.add("card-text")
-//$a.classList.add("btn")
-//$a.classList.add("btn-primary")
+$p2.classList.add("text-center")
+
     
-//$a.setAttribute("href", "#")
+
 
 let title = document.createTextNode(element.producto);
 let parrafo = document.createTextNode(element.descriptions);
-let link = document.createTextNode(element.precio);
+let link = document.createTextNode(`Color : ` + element.precio);
 
 $h5.appendChild(title);
 $p.appendChild(parrafo);
-//$a.appendChild(link);
+$p2.appendChild(link);
 
 $div2.appendChild($h5)
 $div2.appendChild($p)
-//$div2.appendChild($a)
+$div2.appendChild($p2)
 
 $div.appendChild($img)
 $div.appendChild($div2)
