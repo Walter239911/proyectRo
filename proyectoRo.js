@@ -7,8 +7,10 @@ const $contenedor = document.getElementById("contenedor-principal")
     $active[i].addEventListener("click", e =>{
       $active.forEach((el, i)=>{
         $active[i].classList.remove("active1");
+        
       })
       $active[i].classList.add("active1");
+      
       console.log(i)
     })
   })
@@ -399,7 +401,7 @@ AQUALEAD (Maestria)`,
  
  
   cursos.forEach((element)=>{
-    let time = setTimeout(()=>{
+    
     let $divCardPrincipal = document.createElement("div"),
     $divRow = document.createElement("div"),
     imgCard = document.createElement("img"),
@@ -475,7 +477,7 @@ container.appendChild($divCardPrincipal)
 
   
   $contenedor.appendChild(container)
-},500)
+
 })
 
     
@@ -494,18 +496,12 @@ function Inicio(){
           <img src="./img/RO.jpg" class="my-1 img-fluid rounded" alt="">
           
         </div>
-        <div class="col-12 col-md-7 mt-5 ">
-          <h3 class="text-center">BIO</h3>
+        <div class="col-12 col-md-7 m-auto ">
+          <h3 class="text-center">BIOGRAFÍA</h3>
           <div class="d-flex align-items-center position-bio p-2 ">
             
-            <p class="text-center ">Roxana inicia el camino espiritual interesándose desde jovén, 
-              desde el año 88’ en temáticas esotéricas, metafísica, control mental, filosofías budistas,
-               libros de desarrollo personal y seminarios.  En 2010 comienza a estudiar “formalmente” se
-                 sumerge en formaciones de meditación, registros akashicos, chamanismo, constelaciones familiares, 
-                 terapia de vidas pasadas sanación energética, tarot rider y egipcio, tinturas madre, 
-                 terapia floral y más, abarcando los intereses que resonaban en su transitar. Desde entonces
-                  se dedica a transmitir constantemente sus experiencias, la sanación del ser,
-                   acompañando a otros a desarrollarse y recordar su conexión con lo divino. </p>
+            <p class="text-center ">
+              ¡Hola! Mi nombre es Roxana, inicié un camino espiritual desde joven interesándome por temáticas esotéricas, metafísica, filosofías budistas, libros de desarrollo personal y seminarios. En 2010 comencé a estudiar sumergiéndome en formaciones de meditación, registros akashicos, chamanismo, constelaciones familiares, terapia de vidas pasadas sanación energética, tarot rider y egipcio, tinturas madre, terapia floral y más, abarcando los intereses que resonaban en este transitar. Desde entonces me dediqué a transmitir constantemente mis experiencias, la sanación del ser, acompañando a otros a desarrollarse y recordar su conexión con lo divino. Te doy la bienvenida a este espacio donde comparto lo aprendido para seguir expandiendo conciencia. </p>
           </div>
         </div>
       </div>
@@ -709,23 +705,24 @@ function Inicio(){
 function contacto(){
     $contenedor.innerHTML = ``;
     $contenedor.innerHTML = `
-    
+    <h1 class="text-center mt-5">Formulario</h1>
     <div class="container position-form">
+   
     <form action="https://formsubmit.co/aalquimiapura@gmail.com" method="POST" target="_blank">
     <div class="container row mx-auto">
-      <div class="mb-3 col-6 ">
+      <div class="mb-3 col-12 col-md-6 ">
         <label for="exampleFormControlInput1" class="form-label" >Nombre</label>
-        <input type="text" name="name" class="form-control border-color" id="exampleFormControlInput1" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$" placeholder="Nombre" required>
+        <input type="text" name="name" class="form-control py-3 border-color" id="exampleFormControlInput1" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$" placeholder="Nombre" required>
       </div>
-      <div class="mb-3 col-6">
+      <div class="mb-3 col-12 col-md-6">
         <label for="exampleFormControlInput1" class="form-label">Email </label>
-        <input type="email" name="email" class="form-control border-color" id="exampleFormControlInput1" required placeholder="email">
+        <input type="email" name="email" class="form-control py-3 border-color" id="exampleFormControlInput1" required placeholder="email">
       </div>
-      <div class="mb-3 col-6">
+      <div class="mb-3 col-12 col-md-6">
         <label for="exampleFormControlTextarea1" class="form-label">Motivo</label>
-        <textarea class="form-control border-color" name="commets" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control py-3 border-color" name="commets" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-      <div class=" my-auto col-6">
+      <div class=" my-auto col-12 col-md-6">
         <input type="submit" name="submit" value="enviar" class="btn border-color " onclick="contact()">
        </div>
      </div>
